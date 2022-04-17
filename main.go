@@ -25,7 +25,7 @@ func init() {
 	root.PersistentFlags().IntVarP(&num, "num", "n", 1, "number of ids to make")
 	u := &cobra.Command{
 		Use:   "u",
-		Short: "UUID",
+		Short: "Uuid",
 		Run: func(cmd *cobra.Command, args []string) {
 			g := uu{}
 			generate(g, num)
